@@ -16,10 +16,28 @@
 
 			<p>You can learn a little bit more about me at <a href="http://teeehn.com">TeeehN.com</a></p>
 
-			<a href="map.html">Map test</a>
+			<a href="" data-toggle="modal" data-target="#mapModal">Map test</a>
 		</div>
 	</div>
 </div>
+<!-- modal -->
+<div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="mapModalLabel">Map</h4>
+      </div>
+      <div class="modal-body">
+		<img src="http://maps.googleapis.com/maps/api/staticmap?center=The+White+House,1600+Pennsylvania+Avenue+NW,Washington,DC+20500&size=800x600" alt="map" class="img-responsive">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 </body>
