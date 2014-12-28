@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maps | teeehn github site</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>T<small>eeeh</small>N</h1>
+
+			<h2>Google Maps</h2>
+
+			<ul class="list-unstyled">
+				<li><a href="" data-toggle="modal" data-target="#staticMapModal">Static Image Map</a></li>
+				<li><a href="" data-toggle="modal" data-target="#jsMapModal">JavaScript driven Map</a></li>
+			</ul>	
+			
+		</div>
+	</div>
+</div>
+<!-- static modal -->
+<div class="modal fade" id="staticMapModal" tabindex="-1" role="dialog" aria-labelledby="staticMapLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="mapModalLabel">Map</h4>
+      </div>
+      <div class="modal-body">
+		<img src="http://maps.googleapis.com/maps/api/staticmap?center=The+White+House,1600+Pennsylvania+Avenue+NW,Washington,DC+20500&size=800x600" alt="map" class="img-responsive">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / static modal -->
+<!-- js modal -->
+<div class="modal fade" id="jsMapModal" tabindex="-1" role="dialog" aria-labelledby="staticMapLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="jsModalLabel">Map</h4>
+      </div>
+      <div class="modal-body">
+		<div id="mapContainer"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / js modal -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLdwulrHnUeeu2oP99Taa1fFl30b-uanU"></script>
+<script src="/js/maps.js"></script>
+</body>
+</html>

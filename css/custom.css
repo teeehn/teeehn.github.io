@@ -1,0 +1,11 @@
+/**
+ * Customer css
+ */
+
+#mapContainer {
+	width: 400px;
+	min-height: 400px;
+}
+.modal-body {
+	min-height: 500px;
+}
