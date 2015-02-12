@@ -44,7 +44,7 @@
 				// Add marker
 				tnMaps.mainMarker = new google.maps.Marker(markerOptions);
 				tnMaps.mainMarker.setMap(tnMaps.map);
-			};
+			}
 		});
 	});
 
