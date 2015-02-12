@@ -7,65 +7,87 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <style>
-  	article { padding: 20px 0;}
-  	.page-header small { display: block;}
+  	article { padding: 20px 0 40px;}
+  	article:nth-child(2n + 1) {
+  		background: beige;
+  	}
+  	.top-header-row {
+  		background: midnightblue;
+  	}
+  	.top-header-row h1,
+  	.top-header-row h1 small {
+  		color: white;
+  	}
+  	.top-header { 
+  		padding-top: 2em;
+  		padding-bottom: 2em;
+  	}
+  	.top-header small { display: block;}
+  	@media screen and (max-width: 768px){
+  		article > .container > .col-xs-12 { padding-bottom: 20px;}
+  	}
   </style>
 </head>
 <body>
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<header class="page-header">
+<div class="container-fluid">
+	<div class="row top-header-row">
+		<div class="container">
+			<header class="top-header col-xs-12">
 				<h1>Thomas Nicolosi
 
 				<small>Samples of Recent Work</small>
 				</h1>
 			</header>
-
-			<article class="row">
-				<div class="col-xs-12 col-sm-6">
-					<h3>Experian.ExperianDirect.com</h3>
-					<p class="lead">Re-launch of Experian's flagship site.</p>
-					<p>Created and contributed to order funnel pages.</p>
-					<p>Skills: Bootstrap, AngularJS, HTML, CSS, JavaScript, API integration.</p>
-					<a href="https://experian.experiandirect.com/credit#/">Live link</a>
-				</div>
-
-				<div class="col-xs-12 col-sm-6">
-					<img class="img-responsive" alt="experian.experiandirect.com" src="/img/experian.experiandirect-of.png">
-				</div>
-			</article>
-
-			<article class="row">
-				<div class="col-xs-12 col-sm-6">
-					<h3>Cr&eacute;dito Y M&aacute;s</h3>
-					<p class="lead">Bilingual cobranded credit site.</p>
-					<p>Created and contributed to landing pages (desktop and mobile optimized), sub-section landing pages, public and member pages.</p>
-					<p>Skills: Tridion CMS, HTML, CSS, JavaScript, jQuery, jQuery UI</p>
-					<a href="http://creditoymas.com">Live link</a>
-				</div>
-
-				<div class="col-xs-12 col-sm-6">
-					<img class="img-responsive" alt="creditoymas.com landing page" src="/img/cym.jpg">
-				</div>
-			</article>
-
-			<article class="row">
-				<div class="col-xs-12 col-sm-6">
-					<h3>Cr&eacute;dito Y M&aacute;s - Score Planner</h3>
-					<p class="lead">Interactive score planning tool.</p>
-					<p>Re-wrote score planner tool to accommodate new scoring model and requirements (public and member implementations).</p>
-					<p>Skills: JavaScript, jQuery, jQuery UI, Ajax, HTML, CSS</p>
-					<a href="http://www.creditoymas.com/centro-de-informacion/score-planner/get-started">Live link</a>
-				</div>
-
-				<div class="col-xs-12 col-sm-6">
-					<img class="img-responsive" alt="creditoymas.com public score planner" src="/img/cym-score-planner.png">
-				</div>
-			</article>
-
 		</div>
 	</div>
+
+	<article class="row">
+		<div class="container">
+			<div class="col-xs-12 col-sm-7">
+				<h3>Experian.ExperianDirect.com</h3>
+				<p class="lead">Re-launch of Experian's flagship site.</p>
+				<p>Created and contributed to order funnel pages.</p>
+				<p>Skills: Bootstrap, AngularJS, HTML, CSS, JavaScript, API integration.</p>
+				<a href="https://experian.experiandirect.com/credit#/">Live link</a>
+			</div>
+
+			<div class="col-xs-12 col-sm-5">
+				<img class="img-responsive" alt="experian.experiandirect.com" src="/img/experian.experiandirect-of.png">
+			</div>
+		</div>
+	</article>
+
+	<article class="row">
+		<div class="container">
+			<div class="col-xs-12 col-sm-7">
+				<h3>Cr&eacute;dito Y M&aacute;s</h3>
+				<p class="lead">Bilingual cobranded credit site.</p>
+				<p>Created and contributed to landing pages (desktop and mobile optimized), sub-section landing pages, public and member pages.</p>
+				<p>Skills: Tridion CMS, HTML, CSS, JavaScript, jQuery, jQuery UI</p>
+				<a href="http://creditoymas.com">Live link</a>
+			</div>
+
+			<div class="col-xs-12 col-sm-5">
+				<img class="img-responsive" alt="creditoymas.com landing page" src="/img/cym.jpg">
+			</div>
+		</div>
+	</article>
+
+	<article class="row">
+		<div class="container">
+			<div class="col-xs-12 col-sm-7">
+				<h3>Cr&eacute;dito Y M&aacute;s - Score Planner</h3>
+				<p class="lead">Interactive score planning tool.</p>
+				<p>Re-wrote score planner tool to accommodate new scoring model and requirements (public and member implementations).</p>
+				<p>Skills: JavaScript, jQuery, jQuery UI, Ajax, HTML, CSS</p>
+				<a href="http://www.creditoymas.com/centro-de-informacion/score-planner/get-started">Live link</a>
+			</div>
+
+			<div class="col-xs-12 col-sm-5">
+				<img class="img-responsive" alt="creditoymas.com public score planner" src="/img/cym-score-planner.png">
+			</div>
+		</div>
+	</article>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
