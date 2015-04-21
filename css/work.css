@@ -1,0 +1,19 @@
+article { padding: 20px 0 40px;}
+article:nth-child(2n + 1) {
+	background: beige;
+}
+.top-header-row {
+	background: midnightblue;
+}
+.top-header-row h1,
+.top-header-row h1 small {
+	color: white;
+}
+.top-header { 
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.top-header small { display: block;}
+@media screen and (max-width: 768px){
+	article > .container > .col-xs-12 { padding-bottom: 20px;}
+}
