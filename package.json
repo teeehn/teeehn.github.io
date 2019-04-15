@@ -1,0 +1,30 @@
+{
+  "name": "teeehn.github.io",
+  "version": "1.0.0",
+  "description": "Web Developer and Software Engineer",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teeehn/teeehn.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teeehn/teeehn.github.io/issues"
+  },
+  "homepage": "https://github.com/teeehn/teeehn.github.io#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "parcel": "^1.12.3",
+    "sass": "^1.18.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
