@@ -4,6 +4,8 @@
   "description": "Web Developer and Software Engineer",
   "main": "index.js",
   "scripts": {
+    "deploy": "gh-pages -d dist -b master",
+    "build": "parcel build index.html",
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +14,7 @@
     "url": "git+https://github.com/teeehn/teeehn.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tom Nicolosi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/teeehn/teeehn.github.io/issues"
@@ -24,6 +26,9 @@
     "sass": "^1.18.0"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

@@ -1,4 +1,8 @@
-body {
-    background-color: black;
-    color: white;
+@import "./src/scss/custom";
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body,
+#root {
+    height: 100%;
 }
