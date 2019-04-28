@@ -23,6 +23,7 @@
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "parcel": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6",
     "sass": "^1.18.0"
   },
   "dependencies": {
