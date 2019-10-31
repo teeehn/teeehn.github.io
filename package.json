@@ -1,6 +1,6 @@
 {
   "name": "teeehn.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Web Developer and Software Engineer",
   "main": "index.js",
   "scripts": {
@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.0",
-    "popper.js": "^1.15.0",
+    "jquery": "^3.4.1",
+    "picnic": "^6.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
