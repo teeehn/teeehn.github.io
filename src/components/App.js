@@ -21,7 +21,11 @@ const App = () => {
             <div className="tn__site-wrapper">
                 <div className="tn__site-wrapper--inner">
                     <h1 className="pb-0">{ name }</h1>
-                    <p>{ message }</p>
+                    <p>
+                    { 
+                        message 
+                    }
+                    </p>
                 </div>
             </div>
             <Footer />
