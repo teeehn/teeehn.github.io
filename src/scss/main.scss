@@ -8,16 +8,19 @@
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/utilities";
 
+// Custom variables
+$navbar--top-offset: 5rem;
+$footer--height-offest: 10rem;
+
 // Custom styles.
-.tn__site--wrapper {
-    width: 90%;
-    max-width: 60rem;
-    margin: 0 auto;
+.tn__site-wrapper {
+    width: 100%;
+    min-height: 100%;
 }
 
-.tn__section--main {
-    padding-top: 5rem;
-    height: 100%;
+.tn__site-wrapper--inner {
+    padding-top: $navbar--top-offset;
+    padding-bottom: 10rem;
 }
 
 .tn__navbar--inner {
@@ -27,8 +30,8 @@
 }
 
 .tn__site--footer {
-    height: 10rem;
-    margin-top: -10rem;
+    height: $footer--height-offest;
+    margin-top: -($navbar--top-offset);
 }
 
 @include media-breakpoint-up(xl) {

@@ -18,12 +18,12 @@ const App = () => {
     return (
         <>
             <Navbar />
-            <main className="tn__site--wrapper">
-                <section className="tn__section--main">
+            <div className="tn__site-wrapper">
+                <div className="tn__site-wrapper--inner">
                     <h1 className="pb-0">{ name }</h1>
                     <p>{ message }</p>
-                </section>
-            </main>
+                </div>
+            </div>
             <Footer />
         </>
     );
