@@ -11,6 +11,7 @@
 // Local variables.
 
 $site__nav--top-offset: 5rem;
+$site__content--max-width: 100rem;
 
 // Site wrapper with sticky footer.
 
@@ -41,15 +42,15 @@ body {
 
 // Top navbar
 
-.tn__navbar--inner {
+.tn__site-content--inner {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 1.5rem;
 }
 
 @include media-breakpoint-up(xl) {
-    .tn__navbar--inner {
-        max-width: 100rem;
+    .tn__site-content--inner {
+        max-width: $site__content--max-width;
         margin: 0 auto;
     }
 }
