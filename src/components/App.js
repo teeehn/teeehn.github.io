@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Brand from "./Brand";
+import Menu from "./Menu";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -17,7 +19,10 @@ const App = () => {
 
     return (
         <>
-            <Navbar />
+            <Navbar>    
+                <Brand />
+                <Menu />
+            </Navbar>
             <div className="tn__site-wrapper">
                 <div className="tn__site-wrapper--inner">
                     <section className="tn__site-content--inner">
