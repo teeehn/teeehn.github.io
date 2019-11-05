@@ -3,6 +3,7 @@ import Brand from "./Brand";
 import Menu from "./Menu";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import FullPanel from "./FullPanel";
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
                 <Menu />
             </Navbar>
             <div className="tn__site-wrapper">
+                <FullPanel />
                 <div className="tn__site-wrapper--inner">
                     <section className="tn__site-content--inner">
                         <h1 className="pb-0">{ name }</h1>
