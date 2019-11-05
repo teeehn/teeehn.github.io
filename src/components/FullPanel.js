@@ -6,6 +6,10 @@ function FullPanel ({ image_src = default_src }) {
         <div className="tn__panel--full" style={{
             backgroundImage: `url(${image_src})`
         }} >
+            <div className="tn__panel--text-overlay text-light text-center">
+                <h1 className="p-0 text-nowrap">Test Panel Title</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
         </div>
     );
 }

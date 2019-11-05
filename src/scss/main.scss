@@ -66,18 +66,40 @@ body {
 
 // Components - Full panel
 
-.tn__site--wrapper {
+.tn__panel--full {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50%;
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .tn__panel--full {
+        padding-bottom: 35%;
+    }
+}
+
+.tn__site-wrapper {
 
     .tn__panel--full {
 
         &:first-child {
-            margin-top: -5rem;
+            margin-top: -2rem;
         }
     }
 }
-.tn__panel--full {
-        background-position: center;
-        background-size: cover;
-        padding-bottom: 50%;
-        width: 100%;
+
+.tn__panel--text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
