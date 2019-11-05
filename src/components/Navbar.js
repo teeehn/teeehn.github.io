@@ -1,19 +1,15 @@
 import React from "react";
+import MenuIcon from "./MenuIcon";
 
-function Navbar () {
+function Navbar ({ children }) {
     return (
         <nav>
-            <div className="tn__navbar--inner h-100">
-                <span className="brand">Brand</span>
-
+            <div className="h-100">
                 <input id="main_menu" type="checkbox" className="show" />
-                <label htmlFor="main_menu" className="burger pseudo button">menu</label>
-
-                <div className="menu">
-                    <a href="#">One</a>
-                    <a href="#">Two</a>
-                    <a href="#">Three</a>
-                </div>  
+                <MenuIcon />
+                {
+                    children
+                }
             </div>
         </nav>
     );

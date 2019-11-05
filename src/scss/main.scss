@@ -8,9 +8,12 @@
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/utilities";
 
+@import "menu-icon";
+
 // Local variables.
 
 $site__nav--top-offset: 5rem;
+$site__content--max-width: 100rem;
 
 // Site wrapper with sticky footer.
 
@@ -24,8 +27,11 @@ body {
 }
 
 .app-root {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .tn__site-wrapper {
@@ -41,15 +47,15 @@ body {
 
 // Top navbar
 
-.tn__navbar--inner {
+.tn__site-content--inner {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 1.5rem;
 }
 
 @include media-breakpoint-up(xl) {
-    .tn__navbar--inner {
-        max-width: 100rem;
+    .tn__site-content--inner {
+        max-width: $site__content--max-width;
         margin: 0 auto;
     }
 }
