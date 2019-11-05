@@ -63,3 +63,21 @@ body {
 .tn__site--footer {
     padding: 2rem 0;
 }
+
+// Components - Full panel
+
+.tn__site--wrapper {
+
+    .tn__panel--full {
+
+        &:first-child {
+            margin-top: -5rem;
+        }
+    }
+}
+.tn__panel--full {
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 50%;
+        width: 100%;
+}
