@@ -7,15 +7,18 @@ import FullPanel from "./FullPanel";
 
 const menu_items = [
     {
-        label: "About"
+        label: "About",
+        link: "#about"
     },
     {
-        label: "Blog"
+        label: "Blog",
+        link: "#blog"
     },
     {
-        label: "Contact"
+        label: "Contact",
+        link: "#contact"
     }
-]
+];
 
 const App = () => {
 
