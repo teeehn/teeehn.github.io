@@ -5,6 +5,18 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import FullPanel from "./FullPanel";
 
+const menu_items = [
+    {
+        label: "About"
+    },
+    {
+        label: "Blog"
+    },
+    {
+        label: "Contact"
+    }
+]
+
 const App = () => {
 
     const [name, setName] = useState('Test title');
@@ -22,7 +34,7 @@ const App = () => {
         <>
             <Navbar>    
                 <Brand />
-                <Menu />
+                <Menu items={menu_items} />
             </Navbar>
             <div className="tn__site-wrapper">
                 <FullPanel />

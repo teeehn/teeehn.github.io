@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React from "react";
+import Menu_Item from "./Menu_Item";
 
-function Menu () {
+function Menu ({ items = [] }) {
     return (
         <div className="menu">
-            <a className="button pseudo" href="#">One</a>
-            <a className="button pseudo" href="#">Two</a>
-            <a className="button pseudo" href="#">Three</a>
+            {
+                items.map((item, index) => <Menu_Item key={index} { ...item } />)
+            }
         </div> 
     ); 
 }
