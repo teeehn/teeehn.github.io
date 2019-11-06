@@ -40,7 +40,8 @@ const App = () => {
                             message.split(/\n\n/).map((str, i) => <p key={i}>{ str }</p>)
                         }
                     </section>
-                    <section className="tn__site-content--inner flex one three-800">
+                    <section className="tn__site-content--inner">
+                        <div className=" flex one three-800">
                         {
                             card_content.map(function (card, index) {
                                 return (
@@ -51,6 +52,7 @@ const App = () => {
                                 );
                             })
                         }
+                        </div>
                     </section>
                 </div>
             </div>
