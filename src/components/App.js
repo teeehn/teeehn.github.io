@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import FullPanel from "./FullPanel";
+import Card from "./Card";
 
 const App = () => {
 
@@ -32,6 +33,17 @@ const App = () => {
                         {
                             message.split(/\n\n/).map((str, i) => <p key={i}>{ str }</p>)
                         }
+                    </section>
+                    <section className="tn__site-content--inner flex three-800">
+                        <div>
+                            <Card />
+                        </div>
+                        <div>
+                            <Card />
+                        </div>
+                        <div>
+                            <Card />
+                        </div>
                     </section>
                 </div>
             </div>
