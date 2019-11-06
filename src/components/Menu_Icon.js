@@ -1,6 +1,6 @@
 import React from "react";
 
-function MenuIcon () {
+function Menu_Icon () {
     return (
         <label htmlFor="main_menu" className="burger pseudo button menu-icon">
             <span />
@@ -10,4 +10,4 @@ function MenuIcon () {
     );
 }
 
-export default MenuIcon;
+export default Menu_Icon;

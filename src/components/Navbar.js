@@ -1,12 +1,12 @@
 import React from "react";
-import MenuIcon from "./MenuIcon";
+import Menu_Icon from "./Menu_Icon";
 
 function Navbar ({ children }) {
     return (
         <nav>
             <div className="h-100">
                 <input id="main_menu" type="checkbox" className="show" />
-                <MenuIcon />
+                <Menu_Icon />
                 {
                     children
                 }

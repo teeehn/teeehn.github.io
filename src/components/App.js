@@ -6,9 +6,22 @@ import Footer from "./Footer";
 import FullPanel from "./FullPanel";
 import Card from "./Card";
 
-// Test data
-
 import { card_content, message, name } from "../assets/data";
+
+const menu_items = [
+    {
+        label: "About",
+        link: "#about"
+    },
+    {
+        label: "Blog",
+        link: "#blog"
+    },
+    {
+        label: "Contact",
+        link: "#contact"
+    }
+];
 
 const App = () => {
 
@@ -16,7 +29,7 @@ const App = () => {
         <>
             <Navbar>    
                 <Brand />
-                <Menu />
+                <Menu items={menu_items} />
             </Navbar>
             <div className="tn__site-wrapper">
                 <FullPanel />
